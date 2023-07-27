@@ -1,0 +1,59 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000000;
+    --primary-color:#0AF;
+    --text-color: #666;
+}
+* {
+    box-sizing: inherit;
+}
+/* html {
+    font-size: 62.5%;
+}
+p {
+    font-size: 1.6rem;
+} */
+
+.grid {
+    width: 1480px;
+    max-width:100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+.grid__column-4 {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 33.333%;
+}
+.grid__column-7 {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 25%;
+}
+.grid__column-8 {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 67.667%
+}
+.grid__column-13 {
+    margin-top: 160px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 58.333%
+}
+.grid__column-14 {
+    align-items: center;
+    margin-top: 160px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 41.667%
+}
+/* Animations */
