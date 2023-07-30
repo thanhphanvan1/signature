@@ -64,14 +64,6 @@ html {
     justify-content: center;
     min-width: 243px;
 }
-@keyframesfaceIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 #nav__select-options {
     display: flex;
     padding: 8px 16px;
@@ -156,12 +148,18 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
+    position: relative;
+    animation-name: slip;
+    animation-duration: 3s;
 }
 .heading-infor--1 {
     font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black-color);
+    position: relative;
+    animation-name: slip;
+    animation-duration: 3s;
 }
 .heading-infor--text {
     font-size: 1.6rem;
@@ -169,6 +167,9 @@ html {
     font-weight: 400;
     margin-top: 24px;
     text-indent: 24px;
+    position: relative;
+    animation-name: slip;
+    animation-duration: 3s;
 }
 .heading-infor--text--1 {
     font-size: 1.6rem;
@@ -176,6 +177,9 @@ html {
     font-weight: 400;
     margin-top: 24px;
     text-indent: 24px;
+    position: relative;
+    animation-name: slip;
+    animation-duration: 3s;
 }
 .contact__link {
     margin-top: 24px;
@@ -185,6 +189,10 @@ html {
     border-style: none;
     background-color: var(--primary-color);
     color: var(--white-color);
+    position: relative;
+    /* animation-name: slip;
+    animation-duration: 3s; */
+    animation: slip 3s ease-in;
 }
 /* FOOTER ABOUT */
 .footer__about {
@@ -198,6 +206,7 @@ html {
     font-weight: 700;
     color: var(--white-color);
     text-transform: uppercase;
+    animation: fadeIn ease-in 0.5s;
 }
 .footer__about-text {
     text-align: center;
@@ -205,12 +214,17 @@ html {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--white-color);
+    animation: fadeIn ease-in 0.5s;
 }
 .footer__about-list {
     padding: 0 440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: fadeIn ease-in 0.5s;
+}
+.picture {
+    animation: fadeIn ease 0.5s;
 }
 .footer__about-list--item {
     width: 194px;
@@ -259,10 +273,15 @@ html {
     border-radius: 15px;
     box-shadow: 1px 10px 20px 20px rgba(0, 0, 0, 0.09);
     padding: 32px 0 0 32px;
+    animation: turn .9s ease;
 }
 .service__list:hover {
      background-color: var(--white-color);
      color: var(--primary-color);
+}
+.service__list:hover .service__icon {
+    color: #fff;
+    transform: scale(1.2);
 }
 .service__list:hover .service__list-item {
     background-color: var(--primary-color);
@@ -295,12 +314,14 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-color);
+    animation: slip 1s ease-in;
 }
 .heading__solution--1 {
     font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--black-color);
+    animation: slip 3s ease-in;
 }
 .heading__solution--text {
     font-size: 1.6rem;
@@ -313,6 +334,7 @@ html {
     margin: 8px 8px 0px 32px;
     box-sizing: border-box;
     border: 2px solid var(--primary-color);
+    animation: turn 1s ease-in;
 }
 .solution__column-item-tiltle {
     height: 48px;
@@ -334,6 +356,7 @@ html {
 .solution__list-img {
     display: flex;
     margin: 0 32px;
+    animation: fadeIn 1s ease-in;
 }
 .solution__list-img-1{
     margin: 8px 8px;
@@ -346,6 +369,7 @@ html {
     display: block;
     align-items: center;
     margin-left: 40px;
+    animation: fadeIn 1s ease-in;
 }
 /* SIGNATURE CLOUD */
 .signature__cloud {
@@ -359,15 +383,18 @@ html {
 .signature__cloud-list--img1 {
     width: 350px;
     height: 236px;
+    animation: turn 1s ease-in;
 }
 .signature__cloud-list--img2 {
     width: 206px;
     height: 239px;
+    animation: turn 1s ease-in;
 }
 .signature__cloud-list--img3 {
-    width: 590px;
+    width: 580px;
     height: 351px;
     align-items: center;
+    animation: turn 1s ease-in;
 }
 .signature__cloud-title {
     color: var(--white-color);
@@ -381,6 +408,7 @@ html {
     font-size: 1.6rem;
     line-height: 2rem;
     text-align:justify ;
+    animation: slipLeft 3s ease-in;
 }
 .signature__cloud-item {
     list-style: none;
@@ -396,11 +424,13 @@ html {
 /* SIGNATURE HI TECH */
 .signature__hi-tech-list {
     list-style: none;
+    animation: fadeIn .5s ease-in;
 }
 .signature__hi-tech {
     padding-top: 160px;
     text-align: center;
     margin-bottom: 32px;
+    animation: fadeIn .5s ease-in;
 }
 .signature__hi-tech--title {
     font-size: 2.2rem;
@@ -418,6 +448,8 @@ html {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--black-color);
+    animation: fadeIn .5s ease-in;
+
 }
 .signature__hi-tech--icon {
     font-size: 1.4rem;
@@ -428,14 +460,17 @@ html {
     font-weight: 400;
     color: var(--black-color);
     margin-left: 8px;
+    animation: fadeIn .5s ease-in;
 }
 .signature__hi-tech-img {
     margin: 48px 0 80px 0;
     display: flex;
+    animation: fadeIn .5s ease-in;
 }
 .signature__hi-tech-img1 {
     margin-right: 32px;
     transition:  0.2s;
+    animation: fadeIn .5s ease-in;
 }
 .signature__hi-tech-img1:hover {
     transform: scale(1.1);
@@ -444,18 +479,21 @@ html {
 .customer-title {
     text-align: center;
     margin-bottom: 32px;
+    animation: fadeIn .5s ease-in;
 }
 .customer-title1 {
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--primary-color);
+    animation: fadeIn .5s ease-in;
 }
 .customer-title2 {
     font-size: 2.2rem;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--black-color);
+    animation: fadeIn .5s ease-in;
 }
 .customer__description {
     font-size: 1.6rem;
@@ -463,6 +501,7 @@ html {
     font-weight: 400;
     padding: 0 80px;
     margin-bottom: 80px;
+    animation: fadeIn .5s ease-in;
 }
 .customer__description1 {
     text-indent: 32px;
@@ -492,4 +531,203 @@ html {
     padding: 16px 0px; 
     width: 154px;
     height: 100px;
+}
+/* PROJECT */
+.project__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;   
+    background-size: contain;
+}
+.project__title {
+    margin: 80px 0 16px 0;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn .5s ease-in;
+}
+.project__title1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    animation: fadeIn .5s ease-in;
+}
+.project__title2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--black-color);
+    text-transform: uppercase;
+    animation: fadeIn .5s ease-in;
+}
+.project__list-item {
+    padding: 0 134px;
+}
+.project__text {
+    text-align: center;
+    margin-top: -134px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--black-color);
+    line-height: 1.5rem;
+}
+/* RATE */
+.rate__list-item {
+    padding: 0px 32px 80px 32px;
+    animation: fadeIn .5s ease-in;
+}
+.rate__item {
+    padding-top: 12px;
+    height: 482px;
+    background-color: var(--white-color);
+    box-shadow: 1px 5px 20px 5px rgba(0, 0, 0, 0.09);
+}
+.rate__avatar {
+    margin-top: 16px;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.rate__title {
+    margin:112px 0 32px 0;
+    text-align: center;
+    animation: fadeIn .5s ease-in;
+}
+.rate__title1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    animation: fadeIn .5s ease-in;
+}
+.rate__title2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+.rate__user {
+   align-items: center;
+}
+.rate__name {
+    margin: -64px 64px 16px 112px;
+}
+.username {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--black-color);
+}
+.rate__text{
+    padding: 0 32px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.9rem;
+}
+/* CONTACT PAGE */
+.contact__page {
+    margin: 0 432px;
+    display: block;
+    background-color: var(--white-color);
+    box-shadow: 1px 5px 20px 10px rgba(0, 0, 0, 0.12);
+    padding: 32px 32px;
+    margin-bottom: 80px;
+}
+.contact__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+}
+.contact__text {
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+.contact__name {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    text-transform:uppercase;
+    font-weight: 700;
+}
+.contact__address {
+    display: block;
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+.contact__label, 
+.contact__phone{
+    display: block;
+    color: #666;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 16px;
+}
+.contact__email, 
+.contact__phonenumber{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666;
+}
+/* FOOTER */
+.footer__item-img {
+    padding-top: 25%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer-page {
+    background-color: var(--primary-color);
+    padding: 32px 112px;
+    color: var(--white-color);
+}
+.footer__item-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.footer__column1 {
+    align-items: center;
+    list-style: none;
+    text-indent: 32px;
+    text-align: center;
+}
+.footer-social {
+   /* padding-left: 48px; */
+}
+.footer__column2 {
+    align-items: center;
+    list-style: none;
+}
+.footer__column-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.footer__title-name-text a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+.footer__icon {
+    font-size: 1.4rem;
+    margin-right: 16px;
+    align-items: center;
+}
+.footer__contact-span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: start;
+}
+.footer__social-icon {
+    font-size: 2rem;
+}
+.footer__signatue {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    margin: 16px 0 0;
 }

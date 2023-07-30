@@ -28,6 +28,16 @@ p {
     margin-left: -24px;
     margin-right: -24px;
 }
+.grid__column-0 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.grid__column-1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
 .grid__column-2 {
     padding-left: 12px;
     padding-right: 12px;
@@ -39,8 +49,8 @@ p {
     width: 33.333%;
 }
 .grid__column-7 {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
     width: 25%;
 }
 .grid__column-8 {
@@ -71,3 +81,57 @@ p {
     background-color: var(--primary-color);
 }
 /* Animations */
+.service__icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    display: block;
+    margin: 168px 0 168px 148px;
+    transition: transform 0.2s;
+}
+@keyframes slip {
+    0%   {left:-350px; top:0px;}
+    20%  {left:0px; top:0px;}
+}
+@keyframes slipLeft {
+    0%   {left:630px; top:0px;}
+    20%  {left:1200px; top:0px;}
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fadeInimg {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes turn {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+    }
+}
+.project__img {
+    animation: turn 1s ease-in;
+}
+.project__text {
+    animation: turn 1s ease-in;
+}
+.contact__page {
+    animation: fadeIn .5s ease-in;
+}
